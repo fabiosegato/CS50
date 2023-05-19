@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portifolio
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Name</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+        <th scope="col">TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">CASH</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+  {% for assets in asset %}
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+{% endfor %}
+       </tbody>
+       <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{ total }}</td>
+        </tr>
+      </tfoot>
+  </table>
+
+
+{% endblock %}
